@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7012 링크</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 폰트 적용 (Pretendard) -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <main class="container">
+        <!-- 상단 설명글 -->
+        <header class="profile-section">
+            <h1 class="description-title">링크 모음</h1>
+            <p class="description-text">
+                링크 매번 걸고 찾기 귀찮아서 만듦<br>
+                생각나면 업데이트해요 (최종 26.08.24)
+            </p>
+        </header>
+
+        <!-- 상단 개별 링크 (토글 없음) -->
+        <a href="https://youtube.com/playlist?list=PL0RyZjqXGxTpHYS2zLU9FTENt0t6b-3dm&si=hSVfTf78NIIc9uIg"
+            target="_blank" rel="noopener noreferrer" class="link-btn" style="margin-bottom: -15px;">
+            브이로그 링크
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1glvskDgtlzT1gLdXD03FKHPrsaAKdR4CNG65GCai0J8/edit#gid=0"
+            target="_blank" rel="noopener noreferrer" class="link-btn" style="margin-bottom: 8px;">
+            돈이 쳐없음 시트
+        </a>
+
+        <!-- 토글(카테고리) 및 링크 컨테이너 -->
+        <section id="links-container" class="links-section">
+            <!-- 자바스크립트로 렌더링될 영역 -->
+        </section>
+    </main>
+    <!-- 정보 확인 모달 -->
+    <div id="info-modal" class="modal-overlay hidden">
+        <div class="modal-content info-modal-content">
+            <button id="info-close-btn" class="modal-close-btn" aria-label="닫기">×</button>
+            <h2 id="info-modal-title">정보</h2>
+            <div id="info-modal-body" class="info-modal-body">
+                <!-- 내용이 여기에 들어갑니다 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
