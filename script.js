@@ -10,15 +10,22 @@ const defaultData = [
             }
         ]
     },
+        {
+        category: "브이로그",
+        description: "브이로그 링크에얌",
+        links: [
+            { title: "유튜브", url: "https://youtube.com/playlist?list=PL0RyZjqXGxTpHYS2zLU9FTENt0t6b-3dm&si=hSVfTf78NIIc9uIg" }
+            { title: "드라이브", url: "https://drive.google.com/drive/folders/16OhekYJT2lTXpGXLQKvrDCXXn9wvvOWf?usp=share_link" },
+        ]
+    },
     {
         category: "여행",
         description: "여행용 스프레드 시트들",
         links: [
-            { title: "부산", url: "https://docs.google.com/document/d/1JS3De903YNjgYbNGUnzYdzsQ1GkVgzwJYZK5eDh2MGI/edit" },
-            { title: "도쿄", url: "https://docs.google.com/spreadsheets/d/1d118F7COuSr13IU4XsDYkUAVIGNqP8F2S2xqv90LVl4/edit?usp=drivesdk" },
-            { title: "상하이", url: "https://docs.google.com/spreadsheets/d/1PZesBOuNcrcyK9xAWAn6SEADN4UM8EU2HrybP356IRY/edit?usp=sharing" },
             { title: "오사카", url: "https://docs.google.com/spreadsheets/d/1qSuIJsuYybQDhK9MfGkD7zqtLKXFd5DL8iG2CjvB23s/edit?usp=sharing" }
-
+            { title: "상하이", url: "https://docs.google.com/spreadsheets/d/1PZesBOuNcrcyK9xAWAn6SEADN4UM8EU2HrybP356IRY/edit?usp=sharing" },
+            { title: "도쿄", url: "https://docs.google.com/spreadsheets/d/1d118F7COuSr13IU4XsDYkUAVIGNqP8F2S2xqv90LVl4/edit?usp=drivesdk" },
+            { title: "부산", url: "https://docs.google.com/document/d/1JS3De903YNjgYbNGUnzYdzsQ1GkVgzwJYZK5eDh2MGI/edit" },
         ]
     },
 
