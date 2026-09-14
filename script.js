@@ -10,11 +10,11 @@ const defaultData = [
             }
         ]
     },
-        {
+    {
         category: "브이로그",
         description: "브이로그 링크에얌",
         links: [
-            { title: "유튜브", url: "https://youtube.com/playlist?list=PL0RyZjqXGxTpHYS2zLU9FTENt0t6b-3dm&si=hSVfTf78NIIc9uIg" }
+            { title: "유튜브", url: "https://youtube.com/playlist?list=PL0RyZjqXGxTpHYS2zLU9FTENt0t6b-3dm&si=hSVfTf78NIIc9uIg" },
             { title: "드라이브", url: "https://drive.google.com/drive/folders/16OhekYJT2lTXpGXLQKvrDCXXn9wvvOWf?usp=share_link" },
         ]
     },
@@ -22,7 +22,7 @@ const defaultData = [
         category: "여행",
         description: "여행용 스프레드 시트들",
         links: [
-            { title: "오사카", url: "https://docs.google.com/spreadsheets/d/1qSuIJsuYybQDhK9MfGkD7zqtLKXFd5DL8iG2CjvB23s/edit?usp=sharing" }
+            { title: "오사카", url: "https://docs.google.com/spreadsheets/d/1qSuIJsuYybQDhK9MfGkD7zqtLKXFd5DL8iG2CjvB23s/edit?usp=sharing" },
             { title: "상하이", url: "https://docs.google.com/spreadsheets/d/1PZesBOuNcrcyK9xAWAn6SEADN4UM8EU2HrybP356IRY/edit?usp=sharing" },
             { title: "도쿄", url: "https://docs.google.com/spreadsheets/d/1d118F7COuSr13IU4XsDYkUAVIGNqP8F2S2xqv90LVl4/edit?usp=drivesdk" },
             { title: "부산", url: "https://docs.google.com/document/d/1JS3De903YNjgYbNGUnzYdzsQ1GkVgzwJYZK5eDh2MGI/edit" },
@@ -89,13 +89,7 @@ function init() {
 
 // 데이터 불러오기 (코드 우선)
 function loadData() {
-    // 이전에 로컬 스토리지(브라우저 저장소)에 저장된 데이터 때문에
-    // script.js 코드를 수정해도 화면에 반영되지 않는 문제가 있었습니다.
-    // 이를 해결하기 위해 항상 script.js의 코드를 우선적으로 불러오도록 수정합니다.
     appData = JSON.parse(JSON.stringify(defaultData));
-
-    // 만약 화면의 '+' 버튼으로 추가한 내용도 유지하고 싶다면 병합 로직이 필요하지만,
-    // 현재는 코드를 직접 수정하여 업데이트하시므로 로컬 스토리지 불러오기를 비활성화합니다.
 }
 
 // 데이터 저장하기
